@@ -1,0 +1,502 @@
+{
+ "pkl_sha256": {
+  "R9": "03d00f7135a828e10ee92db7489c63e80c6dd077cf4fd175589d61e4e5da58f7",
+  "R10_d2": "17801afbe0671898ad4cda82c12a66030d0639e94186492e3bcb6a9f10f791e1",
+  "S13": "53361cdabb3ebd69dade905e4e04691f6edf5aed474ce895b03f48a65e6a7a96",
+  "S23": "bbd3cf2d5611cd753890b3d6b46ff02a79428274ffa16a542c67310e56a92415"
+ },
+ "lockbox2": {
+  "window": [
+   "1986-01-01",
+   "1995-05-31"
+  ],
+  "rsga_files": 3283,
+  "rsga_unparsed": 39,
+  "rsga_prepass": {
+   "rows_in_window": 3241,
+   "days": 3438,
+   "unique_d1": 3241,
+   "frac_days_M1_M2_P1": 0.9293193717277487,
+   "consistency_violations": 0,
+   "frac_violations": 0.0,
+   "issue_hour_hist": {
+    "21": 1,
+    "22": 3116
+   },
+   "issued_missing": 124,
+   "d1_minus_issue_days": {
+    "0": 1,
+    "1": 3114,
+    "2": 1,
+    "366": 1
+   }
+  },
+  "xrs_cover": 0.9956400281171224,
+  "p10_cover": 0.9962843788378256,
+  "satrep": null,
+  "checkA_counts": null,
+  "raw_thr_max24_firing": 0.29232111692844676,
+  "R9": {
+   "n": 3240,
+   "n_before_ref_dropna": 3240,
+   "expected_days": 3438,
+   "events": 928,
+   "brier": {
+    "model": 0.1261989092043381,
+    "swpc": 0.1350653086419753,
+    "persistence": 0.14657894304078997,
+    "climatology": 0.2181455592813611
+   },
+   "best_baseline": "persistence",
+   "vs_swpc": [
+    0.008866399437637206,
+    [
+     0.003093297585195821,
+     0.014744651230780377
+    ]
+   ],
+   "vs_best": [
+    0.020380033836451854,
+    [
+     0.013852943734909534,
+     0.027445338927527745
+    ]
+   ],
+   "hits_model": 625,
+   "hits_swpc": 589,
+   "hits_ci": [
+    -5.506249999999994,
+    81.0
+   ],
+   "interval_pct": [
+    0.625,
+    99.375
+   ],
+   "testable": true,
+   "pass": true,
+   "eventlist": {
+    "flux_M_days": 928,
+    "list_M_days": 947,
+    "both": 887,
+    "flux_only": 41,
+    "list_only": 60,
+    "vs_swpc": [
+     0.00619066008319129,
+     [
+      0.0008480936739782816,
+      0.011788706252711023
+     ]
+    ]
+   },
+   "status": "pass"
+  },
+  "R10_d2": {
+   "n": 3239,
+   "n_before_ref_dropna": 3239,
+   "expected_days": 3438,
+   "events": 930,
+   "brier": {
+    "model": 0.13525045680021183,
+    "swpc": 0.1457083050324174,
+    "persistence": 0.15861978839012203,
+    "climatology": 0.21858647859258612
+   },
+   "best_baseline": "persistence",
+   "vs_swpc": [
+    0.01045784823220559,
+    [
+     0.004636891462449844,
+     0.01697658233906475
+    ]
+   ],
+   "vs_best": [
+    0.02336933158991021,
+    [
+     0.015938839750141293,
+     0.03144970606647554
+    ]
+   ],
+   "hits_model": 604,
+   "hits_swpc": 567,
+   "hits_ci": [
+    -10.0,
+    87.50625000000036
+   ],
+   "interval_pct": [
+    0.625,
+    99.375
+   ],
+   "testable": true,
+   "pass": true,
+   "eventlist": {
+    "flux_M_days": 930,
+    "list_M_days": 949,
+    "both": 889,
+    "flux_only": 41,
+    "list_only": 60,
+    "vs_swpc": [
+     0.00826786087540585,
+     [
+      0.002567634761870907,
+      0.014279056389549714
+     ]
+    ]
+   },
+   "status": "pass"
+  },
+  "S13": {
+   "n": 3195,
+   "n_before_ref_dropna": 3195,
+   "expected_days": 3438,
+   "events": 189,
+   "brier": {
+    "model": 0.02832990179419167,
+    "swpc": 0.04721915492957746,
+    "persistence": 0.02729653695921369,
+    "climatology": 0.05584769854487393
+   },
+   "best_baseline": "persistence",
+   "vs_swpc": [
+    0.018889253135385795,
+    [
+     0.008948932202636047,
+     0.0315961115032133
+    ]
+   ],
+   "vs_best": [
+    -0.001033364834977984,
+    [
+     -0.0036272708389256934,
+     0.001353298131554309
+    ]
+   ],
+   "hits_model": 127,
+   "hits_swpc": 70,
+   "hits_ci": [
+    25.0,
+    98.50625000000036
+   ],
+   "interval_pct": [
+    0.625,
+    99.375
+   ],
+   "testable": false,
+   "pass": false,
+   "sep_check": {
+    "list_starts": 104,
+    "list_found": 78,
+    "frac_list_found": 0.75,
+    "my_onsets": 62,
+    "onsets_in_list": 57,
+    "frac_onsets_in_list": 0.9193548387096774
+   },
+   "status": "untestable"
+  },
+  "S23": {
+   "n": 3195,
+   "n_before_ref_dropna": 3195,
+   "expected_days": 3438,
+   "events": 189,
+   "brier": {
+    "model": 0.025998234252003035,
+    "swpc": 0.04721915492957746,
+    "persistence": 0.02729653695921369,
+    "climatology": 0.05584769854487393
+   },
+   "best_baseline": "persistence",
+   "vs_swpc": [
+    0.021220920677574435,
+    [
+     0.010700578444031612,
+     0.034656258769306274
+    ]
+   ],
+   "vs_best": [
+    0.0012983027072106532,
+    [
+     -0.001429067378434284,
+     0.004193014331129394
+    ]
+   ],
+   "hits_model": 128,
+   "hits_swpc": 70,
+   "hits_ci": [
+    25.0,
+    99.0
+   ],
+   "interval_pct": [
+    0.625,
+    99.375
+   ],
+   "testable": false,
+   "pass": false,
+   "sep_check": {
+    "list_starts": 104,
+    "list_found": 78,
+    "frac_list_found": 0.75,
+    "my_onsets": 62,
+    "onsets_in_list": 57,
+    "frac_onsets_in_list": 0.9193548387096774
+   },
+   "status": "untestable"
+  }
+ },
+ "lockbox1": {
+  "window": [
+   "2025-01-01",
+   "2026-10-10"
+  ],
+  "rsga_files": 647,
+  "rsga_unparsed": 0,
+  "rsga_prepass": {
+   "rows_in_window": 644,
+   "days": 648,
+   "unique_d1": 643,
+   "frac_days_M1_M2_P1": 0.9922839506172839,
+   "consistency_violations": 0,
+   "frac_violations": 0.0,
+   "issue_hour_hist": {
+    "0": 2,
+    "1": 1,
+    "2": 2,
+    "13": 1,
+    "22": 637,
+    "23": 1
+   },
+   "issued_missing": 0,
+   "d1_minus_issue_days": {
+    "0": 7,
+    "1": 637
+   }
+  },
+  "xrs_cover": 0.9998070987654321,
+  "p10_cover": 0.9937092764060357,
+  "satrep": {
+   "16": {
+    "median_p10": 0.383242590423327,
+    "days": 97
+   },
+   "18": {
+    "median_p10": 0.4128703088560015,
+    "days": 648
+   },
+   "19": {
+    "median_p10": 0.41647157427425263,
+    "days": 638
+   }
+  },
+  "checkA_counts": {
+   "events": 13,
+   "lone_alerts": 1
+  },
+  "raw_thr_max24_firing": 0.18981481481481483,
+  "R9": {
+   "n": 643,
+   "n_before_ref_dropna": 643,
+   "expected_days": 648,
+   "events": 236,
+   "brier": {
+    "model": 0.18455037778656805,
+    "swpc": 0.20981430793157074,
+    "persistence": 0.19731347674488658,
+    "climatology": 0.2714918556377377
+   },
+   "best_baseline": "persistence",
+   "vs_swpc": [
+    0.02526393014500273,
+    [
+     0.009712488744589609,
+     0.04127063634930189
+    ]
+   ],
+   "vs_best": [
+    0.01276309895831855,
+    [
+     0.0003045414519573003,
+     0.025202858533053756
+    ]
+   ],
+   "hits_model": 141,
+   "hits_swpc": 130,
+   "hits_ci": [
+    -5.0,
+    33.0
+   ],
+   "interval_pct": [
+    0.625,
+    99.375
+   ],
+   "testable": true,
+   "pass": true,
+   "status": "pass"
+  },
+  "R10_d2": {
+   "n": 642,
+   "n_before_ref_dropna": 642,
+   "expected_days": 648,
+   "events": 237,
+   "brier": {
+    "model": 0.20140639153545917,
+    "swpc": 0.22737632398753896,
+    "persistence": 0.21887573795598136,
+    "climatology": 0.27285653110435154
+   },
+   "best_baseline": "persistence",
+   "vs_swpc": [
+    0.02596993245207978,
+    [
+     0.012412081958203898,
+     0.04178904709681399
+    ]
+   ],
+   "vs_best": [
+    0.01746934642052221,
+    [
+     0.0027199428845291564,
+     0.030540820362382474
+    ]
+   ],
+   "hits_model": 134,
+   "hits_swpc": 121,
+   "hits_ci": [
+    -7.0,
+    37.506250000000364
+   ],
+   "interval_pct": [
+    0.625,
+    99.375
+   ],
+   "testable": true,
+   "pass": true,
+   "status": "pass"
+  },
+  "S13": {
+   "n": 639,
+   "n_before_ref_dropna": 639,
+   "expected_days": 648,
+   "events": 29,
+   "brier": {
+    "model": 0.02205071523750385,
+    "swpc": 0.03303427230046948,
+    "persistence": 0.0251063397810619,
+    "climatology": 0.043323765204558315
+   },
+   "best_baseline": "persistence",
+   "vs_swpc": [
+    0.010983557062965632,
+    [
+     0.005507519184681038,
+     0.016188462330426808
+    ]
+   ],
+   "vs_best": [
+    0.0030556245435580443,
+    [
+     -0.0018148339818739325,
+     0.007412110579720668
+    ]
+   ],
+   "hits_model": 19,
+   "hits_swpc": 15,
+   "hits_ci": [
+    0.0,
+    10.0
+   ],
+   "interval_pct": [
+    0.625,
+    99.375
+   ],
+   "testable": true,
+   "pass": false,
+   "checkA": {
+    "swpc_S1_days": 56,
+    "both": 25,
+    "mine_only": 4,
+    "swpc_only": 31,
+    "vs_swpc": [
+     0.007244726108060895,
+     [
+      -0.00421695356692269,
+      0.015143978407389543
+     ]
+    ]
+   },
+   "status": "fail"
+  },
+  "S23": {
+   "n": 639,
+   "n_before_ref_dropna": 639,
+   "expected_days": 648,
+   "events": 29,
+   "brier": {
+    "model": 0.02193004483032151,
+    "swpc": 0.03303427230046948,
+    "persistence": 0.0251063397810619,
+    "climatology": 0.043323765204558315
+   },
+   "best_baseline": "persistence",
+   "vs_swpc": [
+    0.011104227470147974,
+    [
+     0.006005601748008002,
+     0.016485539559754334
+    ]
+   ],
+   "vs_best": [
+    0.003176294950740387,
+    [
+     -0.0031456219133438237,
+     0.00871560444296341
+    ]
+   ],
+   "hits_model": 18,
+   "hits_swpc": 15,
+   "hits_ci": [
+    0.0,
+    6.0
+   ],
+   "interval_pct": [
+    0.625,
+    99.375
+   ],
+   "testable": true,
+   "pass": false,
+   "checkA": {
+    "swpc_S1_days": 56,
+    "both": 25,
+    "mine_only": 4,
+    "swpc_only": 31,
+    "vs_swpc": [
+     0.0068300730945631705,
+     [
+      -0.005269419351749048,
+      0.015336603704915094
+     ]
+    ]
+   },
+   "status": "fail"
+  }
+ },
+ "answer": [
+  "R9",
+  "R10_d2"
+ ],
+ "status": {
+  "R9": {
+   "1": "pass",
+   "2": "pass"
+  },
+  "R10_d2": {
+   "1": "pass",
+   "2": "pass"
+  },
+  "S13": {
+   "1": "fail",
+   "2": "untestable"
+  },
+  "S23": {
+   "1": "fail",
+   "2": "untestable"
+  }
+ }
+}

@@ -1,0 +1,52 @@
+:Product: Report of Solar-Geophysical Activity
+:Issued: 2026 Oct 12 2200 UTC
+# Prepared jointly by the U.S. Dept. of Commerce, NOAA,
+# Space Weather Prediction Center and the U.S. Air Force.
+#
+Joint USAF/NOAA Solar Geophysical Activity Report and Forecast
+SDF Number 285 Issued at 2200Z on 12 Oct 2026
+
+IA.  Analysis of Solar Active Regions and Activity from 11/2100Z to
+12/2100Z: Solar activity has been at low levels for the past 24 hours.
+There are currently 6 numbered sunspot regions on the disk.
+IB.  Solar Activity Forecast: Solar activity is expected to be low with
+a chance for M-class flares and a slight chance for an X-class flare on
+day one (13 Oct) and expected to be low with a chance for M-class flares
+on days two and three (14 Oct, 15 Oct).
+
+IIA.  Geophysical Activity Summary 11/2100Z to 12/2100Z: The geomagnetic
+field has been at quiet to unsettled levels for the past 24 hours. Solar
+wind speed reached a peak of 524 km/s at 11/2113Z. Total IMF reached 7
+nT at 12/1558Z. The maximum southward component of Bz reached 4 nT at
+12/1505Z.  Electrons greater than 2 MeV at geosynchronous orbit reached
+a peak level of 324 pfu.
+IIB.  Geophysical Activity Forecast: The geomagnetic field is expected
+to be at unsettled to minor storm levels on day one (13 Oct), unsettled
+to active levels on day two (14 Oct) and quiet to unsettled levels on
+day three (15 Oct).
+
+III.  Event probabilities 13 Oct-15 Oct
+Class M    45/40/35
+Class X    10/05/05
+Proton     05/01/01
+PCAF       N/A
+
+IV.  Penticton 10.7 cm Flux
+Observed           12 Oct 123
+Predicted   13 Oct-15 Oct 120/115/110
+90 Day Mean        12 Oct 115
+
+V.  Geomagnetic A Indices
+Observed Afr/Ap 11 Oct  010/013
+Estimated Afr/Ap 12 Oct  008/010
+Predicted Afr/Ap 13 Oct-15 Oct  020/028-016/020-008/010
+
+VI.  Geomagnetic Activity Probabilities 13 Oct-15 Oct
+A.  Middle Latitudes
+Active                35/25/15
+Minor Storm           10/05/05
+Major-severe storm    01/01/01
+B.  High Latitudes
+Active                15/15/15
+Minor Storm           20/20/20
+Major-severe storm    35/20/20

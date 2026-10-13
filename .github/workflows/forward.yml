@@ -1,0 +1,39 @@
+# The daily forecast: at 22:17 UTC, grade every call whose target day has ended, then issue R9 for tomorrow and
+# R10_d2 for the day after, from the GOES X-ray window that closed at 22:00 UTC. Writes live/ledger.csv and
+# live/scoreboard.json. forward.py stops by itself after 2027-10-12.
+name: forward
+on:
+  schedule:
+    - cron: "17 22 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: forward
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: The frozen models' library versions
+        run: pip install -r requirements.txt
+      - name: Grade, then issue
+        run: python3 -I live/forward.py run
+      - name: Commit the ledger
+        run: |
+          git config user.name Castle
+          git config user.email castle@local
+          git add live
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "Forecast: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          for w in 2 4 8 16; do
+            git push origin HEAD:main && exit 0
+            sleep $w
+            git pull --no-rebase --no-edit origin main || { git merge --abort; echo "merge failed: not pushed"; exit 1; }
+          done
+          echo "push failed"; exit 1
