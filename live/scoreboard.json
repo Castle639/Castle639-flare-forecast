@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T01:14Z",
+ "updated": "2026-10-15T00:33Z",
  "R9": {
   "graded": 1,
   "M_days": 0,
@@ -9,11 +9,11 @@
   "brier_swpc": 0.2025
  },
  "R10_d2": {
-  "graded": 0,
+  "graded": 1,
   "M_days": 0,
-  "brier_model": null,
-  "with_swpc": 0,
-  "brier_model_same_rows": null,
-  "brier_swpc": null
+  "brier_model": 0.02877239337301775,
+  "with_swpc": 1,
+  "brier_model_same_rows": 0.02877239337301775,
+  "brier_swpc": 0.16000000000000003
  }
 }
